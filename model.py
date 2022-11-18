@@ -32,7 +32,7 @@ def html_generator(sorted_phonebook_new):
     style = 'style="font-size:30px;"'
     html = '<html>\n  <head></head>\n  <body>\n'
     html += '    <p {}>Телефонный справочник: {} </p>\n'\
-        .format(style, html_list(sorted_phonebook_new))
+        .format(style, sorted_phonebook_new))
     html += '  </body>\n</html>'
     with open('index.html', 'w') as page:
         page.write(html)
